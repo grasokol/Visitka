@@ -68,10 +68,6 @@
     .responsive-image {
       display: block; /* Отображать изображение на ПК */
     }
-    @media (max-width: 768px) { /* Ширина экрана для мобильных устройств */
-    .responsive-image {
-      display: none; } /* Скрыть изображение на мобильных устройствах */
-    }
     .image-overlay {
       position: absolute;
       top: 0;
@@ -173,6 +169,9 @@
 
     /* Медиазапросы */
     @media (max-width: 768px) {
+      .responsive-image {
+        display: none; /* Скрыть изображение на мобильных устройствах */
+      } 
       .section1 {
         flex-direction: column;
         text-align: center;
